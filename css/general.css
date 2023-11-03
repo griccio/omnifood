@@ -1,0 +1,165 @@
+/* 
+TYPOGRAPHY SYSTEM 
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+FONT WEIGHT:
+default 400
+medium 500
+semibold 600
+bold 700
+
+LINE HEIGHTS:
+default 1
+1.6
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- COLORS
+Primary: #e67e22
+background #fae5d3
+section  how it works #fdf2e9
+second button #f0b27a
+hover #cf711f
+heading #45260a
+-Tints
+-Shades
+-Accents:
+-Greys: 
+#555
+#333
+
+
+--05 SHADOWS
+
+--06 BORDER RADIUS
+
+--07 WHITE SPACES
+
+
+
+*/
+/* reset  all margins and paddings of the document */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /*I define the size as a percentage of default browser size which is 16px
+   */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/* ------------------
+General component 
+--------------------*/
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/* reusable grid */
+.grid {
+  display: grid;
+  row-gap: 6.4rem;
+  column-gap: 1rem;
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #45260a;
+  letter-spacing: -0.5px;
+}
+/* / 30 / 36 / 44 / 52 / 62 / */
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.05;
+  margin-bottom: 9.6rem;
+}
+.heading-tertiary {
+  font-size: 3.6rem;
+  line-height: 1.05;
+  margin-bottom: 1.6rem;
+}
+
+/* how it works */
+.subheading {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 0.75px;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fae5d3;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+  color: #fae5d3;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #f0b27a;
+  color: #555;
+
+  /* add borter inside */
+  box-shadow: 0 0 03px #fff;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+.margin-bottom-sm {
+  margin-bottom: 6.4rem !important;
+}

@@ -1,153 +1,3 @@
-/* 
-TYPOGRAPHY SYSTEM 
-
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-FONT WEIGHT:
-default 400
-medium 500
-semibold 600
-bold 700
-
-LINE HEIGHTS:
-default 1
-1.6
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-- COLORS
-Primary: #e67e22
-background #fae5d3
-second button #f0b27a
-hover #cf711f
--Tints
--Shades
--Accents:
--Greys: 
-#555
-#333
-
-
---05 SHADOWS
-
---06 BORDER RADIUS
-
---07 WHITE SPACES
-
-
-
-*/
-/* reset  all margins and paddings of the document */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  /* font-size: 10px; */
-  /*I define the size as a percentage of default browser size which is 16px
-   */
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-}
-
-/* ------------------
-General component 
---------------------*/
-.container {
-  /* 1140px */
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
-
-/* reusable grid */
-.grid {
-  display: grid;
-  gap: 9.6px;
-}
-
-.grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.heading-primary,
-.heading-secondary,
-.heading-tertiary {
-  font-weight: 700;
-  color: #333;
-  letter-spacing: -0.5px;
-}
-/* / 30 / 36 / 44 / 52 / 62 / */
-.heading-primary {
-  font-size: 5.2rem;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
-}
-
-.heading-secondary {
-  font-size: 4.4rem;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
-}
-.heading-tertiary {
-  font-size: 3rem;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
-}
-
-.subheading {
-}
-
-.btn--full:link,
-.btn--full:visited {
-  background-color: #e67e22;
-  color: #fae5d3;
-}
-
-.btn--full:hover,
-.btn--full:active {
-  background-color: #cf711f;
-  color: #fae5d3;
-}
-
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #fff;
-  color: #555;
-}
-
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: #f0b27a;
-  color: #555;
-
-  /* add borter inside */
-  box-shadow: 0 0 03px #fff;
-}
-
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
-.margin-bottom-sm {
-  margin-bottom: 6.4rem !important;
-}
 /* ------------------
   Header
  ---------------------*/
@@ -297,10 +147,62 @@ Navigation
 Section how it works
 --------------*/
 .section-how {
-  padding: 9.6 0;
-  background-color: #fae5d3;
+  padding: 9.6rem 0;
+  background-color: #fdf2e9;
 }
 
-.step-img {
+.step-img-box {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .step-img-box::before {
+  content: "";
+  display: block;
+
   width: 50%;
+  padding-bottom: 50%;
+  border-radius: 50%;
+
+  background-color: blue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.step-img-box::after {
+  content: "";
+  display: block;
+  width: 37%;
+  border-radius: 50%;
+  padding-bottom: 37%;
+  background-color: #f3bf91;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+} */
+
+.step-img {
+  width: 30%;
+}
+
+.step-number {
+  color: #cf711f;
+  color: #ecc6a5;
+  font-weight: 600;
+  font-size: 9.8rem;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+.step-description {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  color: #333;
 }
