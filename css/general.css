@@ -18,16 +18,18 @@ default 1
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 - COLORS
-Primary: #e67e22
-background #fae5d3
-section  how it works #fdf2e9
+
+#fdf2e9 section  how it works
 #faf1e9;
+#fae5d3 background 
 #fae5d3
 #f8d8bd
 #f5cba7
-second button #f0b27a
-hover #cf711f
-heading #45260a
+#f0b27a second button 
+#e67e22 Primary color: 
+#cf711f hover 
+#45260a  text heading 
+
 -Tints
 -Shades
 -Accents:
@@ -64,6 +66,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 /* ------------------
@@ -109,7 +112,7 @@ General component
   color: #45260a;
   letter-spacing: -0.5px;
 }
-/* / 30 / 36 / 44 / 52 / 62 / */
+
 .heading-primary {
   font-size: 5.2rem;
   line-height: 1.05;
