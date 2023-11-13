@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Omnifood is an AI powered food subscription"
+    />
+    <link rel="icon" href="img/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +18,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/queries.css"/>
+    <link rel="stylesheet" href="css/queries.css" />
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <!-- Script to use ionicons.io -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -25,12 +30,17 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <title>OmniFood</title>
+    <script defer src="js/script.js"></script>
+    <title>OmniFood &mdash;Never cook again</title>
   </head>
   <body>
-    <header class="header-hero">
-      <a href="#">
-      <img class="logo" alt="omnifood logo" src="img/omnifood-logo.png" /></a>
+    <header class="header nav-open">
+      <a href="#"
+        ><img
+          class="logo-header"
+          alt="omnifood logo"
+          src="img/omnifood-logo.png"
+      /></a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#how-it-work">How it works</a></li>
@@ -41,12 +51,10 @@
         </ul>
       </nav>
 
-      <!-- <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav"
-        name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav"
-        name="close-outline"></ion-icon>
-      </button> -->
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -67,9 +75,7 @@
             <a href="#" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline margin-bottom-sm">
-              Learn more &darr;</a
-            >
+            <a href="#" class="btn btn--outline"> Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img src="img/customers/customer-1.jpg" alt="customer photo" />
@@ -643,34 +649,51 @@
                 first meal is on us!
               </p>
 
-              <form class="cta-form">
+              <form class="cta-form" name="sign-up" netlify method="POST">
                 <div>
                   <label for="full-name">Full name</label>
-                  <input id="full-name"  type="text" required placeholder="Joe Riccio"/>
+                  <input
+                    id="full-name"
+                    name="full-name"
+                    type="text"
+                    required
+                    placeholder="Giuseppe Riccio"
+                  />
                 </div>
                 <div>
                   <label for="email">email</label>
-                  <input id="email" type="email" required placeholder="my-email@example.com"/>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="griccio@example.com"
+                  />
                 </div>
                 <div>
                   <label for="news">Where did you ear from us?</label>
-                  <select id="news">
-                    <option value="please choose an option">please choose an option</option>
-                    <option value="family and friends">family and friends</option>
+                  <select id="news" name="news">
+                    <option value="please choose an option">
+                      please choose an option
+                    </option>
+                    <option value="family and friends">
+                      family and friends
+                    </option>
                     <option value="youtube video">youtube video</option>
                     <option value="facebook">facebook</option>
                     <option value="others">others</option>
                   </select>
                 </div>
-                
-                  <button type="submit" class="btn btn--form">Sign up now</button>
 
-              </form class="cta-form" action="#">
+                <button type="submit" class="btn btn--form">Sign up now</button>
+              </form>
             </div>
 
-            <div class="cta-img-box" role="img" aria-label="woman enjoing food">
-              
-            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="woman enjoing food"
+            ></div>
           </div>
         </div>
       </section>
@@ -679,24 +702,44 @@
       <div class="container grid grid--footer">
         <div class="logo-col">
           <a href="#">
-            <img class="logo" alt="omnifood logo" src="img/omnifood-logo.png" />
+            <img
+              class="logo-footer"
+              alt="omnifood logo"
+              src="img/omnifood-logo.png"
+            />
           </a>
           <ul class="social-list-links">
-            <li><a href="#" class="footer-link"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a></li>
-            <li><a href="#" class="footer-link"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#" class="footer-link"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a></li>
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
           </ul>
-          <p class="copyright">Copyright &copy; 2027 by Omnifood Inc. All rights reserved.</p>
-        </div> 
+          <p class="copyright">
+            Copyright &copy; 2027 by Omnifood Inc. All rights reserved.
+          </p>
+        </div>
         <div class="address-col">
           <p class="footer-heading">Contact us</p>
           <address class="contact">
             <p class="address">
-               623 Harrison St., 2nd Floor, San Francisco, CA 94107
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
             </p>
-            <a href="tel:415-201-6370" class="footer-link">415-201-6370</a><br/>
-            <a href="mailto:hello@omnifood.com" class="footer-link">hello@omnifood.com</a>
-  
+            <a href="tel:415-201-6370" class="footer-link">415-201-6370</a
+            ><br />
+            <a href="mailto:hello@omnifood.com" class="footer-link"
+              >hello@omnifood.com</a
+            >
           </address>
         </div>
         <nav class="nav-col">
@@ -717,7 +760,6 @@
             <li><a href="#" class="footer-link">Cooking partners</a></li>
             <li><a href="#" class="footer-link">Careers</a></li>
           </ul>
-
         </nav>
         <nav class="nav-col">
           <p class="footer-heading">Resources</p>
@@ -727,10 +769,7 @@
             <li><a href="#" class="footer-link">Privacy & terms</a></li>
           </ul>
         </nav>
-
- </div>
-      
-
+      </div>
     </footer>
   </body>
 </html>

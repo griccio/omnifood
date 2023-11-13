@@ -1,11 +1,14 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Below 1344 (smaller desktop)
-1rem=1em don't depend on html default browser font size in media queries
+1rem=1em=16px don't depend on html default browser font size
+ in media queries
+ 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media (max-width: 84em) {
   .hero {
     max-width: 120rem;
   }
+
   .heading-primary {
     font-size: 4.4rem;
   }
@@ -15,8 +18,8 @@ Below 1344 (smaller desktop)
   }
 }
 
-/***************
-TABLET LANDSCAPE  1000
+/*********************
+LANDSCAPE TABLET  1200px
 ******************/
 @media (max-width: 75em) {
   html {
@@ -45,13 +48,13 @@ TABLET LANDSCAPE  1000
     gap: 4.8rem;
   }
 
-  .testimonial-container {
-    padding: 9.6rem 3.2rem;
+  .testimonials-container {
+    padding: 9.6rem 1.8rem;
   }
 }
 
 /***************
-TABLET (994px)
+Portrait TABLET (994px)
 ******************/
 
 @media (max-width: 59em) {
@@ -60,12 +63,11 @@ TABLET (994px)
     font-size: 50%;
   }
 
-  .logos img {
-    height: 2.4rem;
-  }
-
+  /* Hero section is now  one centered column*/
   .hero {
     grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
   }
 
   .hero-text-box,
@@ -73,10 +75,21 @@ TABLET (994px)
     text-align: center;
   }
 
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
   .hero-img {
     width: 60%;
   }
 
+  /* featured logos */
+  .logos img {
+    height: 2.4rem;
+  }
+
+  /*how it works */
   .step-number {
     font-size: 7.4rem;
   }
@@ -85,15 +98,15 @@ TABLET (994px)
     padding: 2.4rem 3.2rem 3.2rem 3.2rem;
   }
 
+  /* section testimonials */
   /*one column for the section testimonial
-  the gallery is put  into the botton */
+  the gallery is put  to the botton */
   .section-testimonial {
     grid-template-columns: 1fr;
   }
 
   .gallery {
     grid-template-columns: repeat(6, 1fr);
-   
   }
 
   /*call to action: change the ratio of the width of two columns and
@@ -127,7 +140,9 @@ TABLET (994px)
     transition: all 1s;
     transform: translateX(100%, ease-in);
 
-    /* to hide an element withoud display:none
+    /* with display:none I have no transition 
+
+    to hide an element withoud display:none
     1)hide it visually
     2)make it unacessible to mouse and keyboard 
     3) hide it from screen reader*/
@@ -181,6 +196,10 @@ SMALLER  TABLET & MOBILE 700
     margin-bottom: 4.8rem;
   }
 
+  .grid-pricing {
+    column-gap: 1.6rem;
+  }
+
   .pricing-plan {
     width: 100%;
   }
@@ -209,7 +228,7 @@ BELOW 544px
   .grid {
     row-gap: 4.8rem;
   }
-
+  /*all the grids in one column*/
   .grid--2-cols,
   .grid--3-cols,
   .grid--4-cols {
@@ -234,8 +253,8 @@ BELOW 544px
     width: 80%;
   }
 
-  .logo img {
-    height: 1.2rem;
+  .logos img {
+    height: 1.8rem;
   }
 
   /* order the image into the section how it work first image then text */

@@ -12,7 +12,8 @@ bold 700
 
 LINE HEIGHTS:
 default 1
-1.6
+1.05 small
+1.6 paragraph default
 
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -28,7 +29,7 @@ default 1
 #f0b27a second button 
 #e67e22 Primary color: 
 #cf711f hover 
-#45260a  text heading 
+#45260a  text heading, normal text
 
 -Tints
 -Shades
@@ -41,7 +42,7 @@ default 1
 --05 SHADOWS
 
 --06 BORDER RADIUS
-
+9px
 --07 WHITE SPACES
 
 
@@ -59,6 +60,7 @@ html {
   /*I define the size as a percentage of default browser size which is 16px
    */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -179,9 +181,6 @@ General component
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
-}
-.margin-bottom-sm {
-  margin-bottom: 6.4rem !important;
 }
 
 .margin-bottom-md {

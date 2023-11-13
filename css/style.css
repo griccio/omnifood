@@ -1,7 +1,7 @@
 /* ------------------
   Header
  ---------------------*/
-.header-hero {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,28 +11,29 @@
   position: relative;
 }
 
-.logo {
-  height: 2.4rem;
+.logo-header {
+  height: 3.2rem;
   margin-left: 2rem;
+  margin-bottom: 0;
+  display: block;
 }
 
 /* ----------------
 Navigation
 ------------------ */
-.main-nav {
-}
 
 .main-nav-list {
   display: flex;
   list-style: none;
-  gap: 3.2rem;
   align-items: center;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
+  display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: #45260a;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.5s;
@@ -41,24 +42,27 @@ Navigation
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #e67e22;
+  border-bottom: 1px solid #e67e22;
 }
 
-.nav-cta:link,
-.nav-cta:visited {
+/* menu: try for free it is different from other voices
+and it's like a button*/
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
   display: inline-block;
   text-decoration: none;
   font-size: 1.8rem;
-  padding: 1.6rem 3.2rem;
+  padding: 1.2rem 2.4rem;
+  color: #fdf2e9;
+  background-color: #e67e22;
   border-radius: 9px;
   /* transition property (all properties for 1 seconds) 
      in this case background-color change in one seconds */
   transition: background-color 0.5s;
-  color: #fff;
-  background-color: #e67e22;
 }
 
-.nav-cta:hover,
-.nav-cta:active {
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
 
@@ -74,14 +78,6 @@ Navigation
   width: 4.8rem;
   color: #333;
 }
-
-/* <button class="btn-mobile-nav">
-<ion-icon class="icon-mobile-nav"
-name="menu-outline"></ion-icon>
-<ion-icon class="icon-mobile-nav"
-name="close-outline"></ion-icon>
-</button>
- */
 
 .icon-mobile-nav[name="close-outline"] {
   display: none;
@@ -102,7 +98,7 @@ Hero section
   margin: 0 auto;
   align-items: center;
   gap: 9.6rem;
-  padding: 0 1.6rem;
+  padding: 0 3.2rem;
 }
 
 .hero-description {
@@ -131,6 +127,7 @@ Hero section
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  margin-top: 8rem;
 }
 
 .delivered-imgs {
@@ -373,6 +370,7 @@ SECTION TESTIMONIAL
   background-color: #fae5d3;
   align-items: center;
 }
+/* container with testimonial quotations */
 .testimonials-container {
   padding: 9.6rem;
 }
@@ -381,9 +379,6 @@ SECTION TESTIMONIAL
   grid-template-columns: 1fr 1fr;
   row-gap: 4.8rem;
   column-gap: 8rem;
-}
-
-.testimonial {
 }
 
 .testimonial-img {
@@ -459,7 +454,7 @@ SECTION PRICING
   padding: 4.6rem;
 }
 .pricing-plan-complete {
-  /* justify-self: start; */
+  justify-self: start;
   position: relative;
   padding: 4.8rem;
   overflow: hidden;
@@ -643,7 +638,8 @@ SECTION FOOTER
   flex-direction: column;
 }
 
-.logo {
+.logo-footer {
+  height: 3.2rem;
   display: block;
   margin-bottom: 3.2rem;
 }
