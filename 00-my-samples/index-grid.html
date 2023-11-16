@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+  </head>
+  <body>
+    <style>
+      body {
+        --bkColor: rgb(209, 207, 205);
+        --fontFamily: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .main-container {
+        display: grid;
+        width: 900px;
+        height: 800px;
+        background-color: var(--bkColor);
+        grid-template-columns: 1fr 2fr 1fr;
+        /* row-gap: 5px;
+        column-gap: 7px; */
+        justify-content: space-between;
+        align-content: flex-end;
+        font-family: var(--fontFamily);
+      }
+
+      .el {
+        padding: 50px;
+        flex-basis: 120px;
+      }
+      .el--1 {
+        background-color: rgb(112, 57, 163);
+        flex-basis: 10px;
+      }
+
+      .el--2 {
+        background-color: rgb(36, 57, 160);
+        grid-column: 3;
+      }
+
+      .el--3 {
+        background-color: rgb(40, 206, 63);
+
+        grid-column: 2 / span 2;
+      }
+
+      .el--4 {
+        background-color: #c88c23;
+      }
+
+      .el--5 {
+        background-color: #553d88;
+      }
+      .el--6 {
+        background-color: #b3bc34;
+
+        grid-column: 1 / span 3;
+      }
+      .el--7 {
+        background-color: #25c0b3;
+        padding-bottom: 10px;
+      }
+
+      div > i {
+        font-size: 50px;
+        color: rgb(152, 211, 154);
+      }
+    </style>
+
+    <div class="main-container">
+      <div class="el el--1">
+        <i class="fa fa-book"></i>
+        <p>one</p>
+      </div>
+      <div class="el el--2"><i class="fa-regular fa-comment-dots"></i>two</div>
+      <div class="el el--3"><i class="fa-solid fa-children"></i>three</div>
+      <div class="el el--4">four</div>
+      <div class="el el--5">five</div>
+      <div class="el el--6">six</div>
+      <div class="el el--7">seven</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script-dom.js" defer></script>
+    <title>Hello world</title>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <p id="first" class="first margin--sb">my paragraph</p>
+    <p class="second">my paragraph second</p>
+    <div class="container">
+      <p class="third">my paragraph number three</p>
+      <p class="fourth">my paragraph number four</p>
+    </div>
+    <button id="btnTest1"
+     onclick="this.innerText='Clicked!!'"
+     ondblclick="this.innerText='Click me'">
+     Click me</button>
+
+     <button id="btnTest2">
+     Click me</button>
+     <span id="counter" class="counter"></span>
+
+     <h1>DOM Event Propagation</h1>
+     <form onclick="alert('form')">FORM
+      <div onclick="alert('div')">DIV
+        <p onclick="alert('p')">P</p>
+      </div>
+    </form>
+     
+</html>
+
+<!-- 
+<script>
+  let html = document.getElementById("first").innerHTML;
+  document.getElementById("first").innerHTML = "this text has changed";
+</script> -->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <style>
+      .main-container {
+        display: flex;
+        max-width: 800px;
+        height: 200px;
+        background-color: blanchedalmond;
+        justify-content: space-between;
+        /* justify-content: start; */
+        align-items: flex-end;
+        gap: 8px;
+      }
+
+      .el {
+        padding: 50px;
+        flex-basis: 120px;
+      }
+      .el--1 {
+        background-color: rgb(112, 57, 163);
+        padding-bottom: 100px;
+        flex-basis: 10px;
+        order: 4;
+      }
+
+      .el--2 {
+        background-color: rgb(36, 57, 160);
+        padding-bottom: 80px;
+        flex-grow: 2;
+        order: 3;
+      }
+
+      .el--3 {
+        background-color: rgb(40, 206, 63);
+        padding-bottom: 60px;
+        flex-grow: 3;
+        order: 1;
+      }
+
+      .el--4 {
+        background-color: #c88c23;
+        padding-bottom: 10px;
+        align-self: stretch;
+        order: 2;
+      }
+    </style>
+    <div class="main-container">
+      <div class="el el--1">one</div>
+      <div class="el el--2">two</div>
+      <div class="el el--3">three</div>
+      <div class="el el--4">four</div>
+    </div>
+  </body>
+</html>

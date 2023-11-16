@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Address Book</title>
+  </head>
+  <body>
+    <h1>Address Book</h1>
+
+    <div id="container" class="container">
+      <form class="cta-form" name="sign-up" method="POST">
+        <div>
+          <input id="id" name="id" type="hidden"/>
+          <label for="firstname">First name</label>
+          <input
+            id="firstname"
+            name="firstname"
+            type="text"
+            required
+            placeholder="inser first name"/>
+        </div>
+        <div>
+          <label for="lastname">last name</label>
+          <input
+            id="lastname"
+            name="lastname"
+            type="lastname"
+            required
+            placeholder="insert last name"/>
+        </div>
+
+      </form>
+      <div class="button">
+        <button type="button" class="btn btn--form" onclick="addUser()">Add</button>
+        <button id="btn-table-user-update" class="btn btn--form">update</button>      
+        <button id="btn-table-user-refresh" class="btn btn--form">refresh</button>
+      </div>
+   
+      <table id="users-table" class ="users-table">
+
+        <tr>
+          <th>first name
+             
+          </th>
+          <th>
+             last name
+          </th>
+          <th>
+            commands
+         </th>
+        </tr>
+
+      </table>
+
+      <div>
+       
+
+
+
+      </div>
+
+    </div>
+   
+
+     
+</html>
+

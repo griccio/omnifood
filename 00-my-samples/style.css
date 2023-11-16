@@ -1,0 +1,162 @@
+.margin--sb {
+  margin-bottom: 16px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+
+.users-table {
+  border: 1px solid #2626c5;
+}
+td {
+  border: 1px solid #2626c5;
+  padding: 8px 16px;
+}
+
+/* ****************
+SECTION CTS (call Action)
+ ******************/
+
+.section-cta {
+  padding: 9.6rem 0;
+  background-color: #fdf2e9;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta .heading-secondary {
+  color: #45260a;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 150, 76, 0.317),
+      rgba(230, 125, 34, 0.488)
+    ),
+    url("../img/eating.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.cta-text {
+  line-height: 1.8;
+  color: #45260a;
+  margin-bottom: 4.6rem;
+}
+
+.cta-form {
+  width: 300px;
+  height: 300px;
+}
+
+.cta-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  color: #3c3c3c;
+}
+
+.cta-form select,
+.cta-form input {
+  padding: 10px;
+  font-size: 24px;
+  font-family: inherit;
+  color: #3c3c3c;
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #eeeeee;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.users-table {
+  border: 3px solid #3c3c3c;
+  padding: 10px;
+  font-size: 24px;
+  font-family: inherit;
+}
+
+.users-table tr:nth-child(odd) {
+  background-color: rgb(247, 247, 247);
+}
+.users-table tr:nth-child(even) {
+  background-color: rgb(239, 239, 239);
+}
+
+th {
+  border: 3px solid #3c3c3c;
+  background-color: #222222;
+  color: #f6f6f6;
+  padding: 10px;
+}
+
+.button {
+  margin-bottom: 24px;
+}
+
+/* BUTTON */
+.btn,
+.btn--form:link,
+.btn--form:visited {
+  background-color: #dbdad9;
+  color: #090909;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  margin: 24px;
+  transition: all 1s;
+}
+
+.btn--form:hover,
+.btn--form:active {
+  background-color: #2a2a29;
+  color: #dcdcdc;
+}
+
+/* BUTTON */
+.btn-table,
+.btn-table:link,
+.btn-table:visited {
+  background-color: #dbdad9;
+  color: #090909;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 1s;
+}
+
+.btn-table:hover,
+.btn-table:active {
+  background-color: #2a2a29;
+  color: #dcdcdc;
+}
